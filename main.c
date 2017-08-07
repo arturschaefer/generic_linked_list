@@ -10,16 +10,19 @@
 int main(void){
     int i, r, aux_int;
     void *aux_void;
+    clock_t t0, tf;
+    double tempo_gasto;
     TList list;
     TPessoa *p1 = (TPessoa*) malloc(5 * sizeof(TPessoa));
 
+    t0 = clock();
     list_new(&list, sizeof(TPessoa), NULL);
 
     TPessoa p2[] = {{10, "Ab"},
                     {5, "Bc"},
                     {3, "Ds"},
                     {4, "Es"},
-                    {2, "Cd"}};
+                    {2, "Ab"}};
 
     srand(time(NULL));
 
@@ -49,6 +52,10 @@ int main(void){
         printf("Valor deletado\n\n");
     }
 
-    list_with_ints(&list);
+    //list_with_ints(&list);
+    imprime_pessoa(&list);
     list_destroy(&list);
+    tf = clock();
+    tempo_gasto = ( (double) (tf - t0) ) / (((double)CLOCKS_PER_SEC)/1000);
+    printf("Tempo gasto %.2lf\n",tempo_gasto);
 }
