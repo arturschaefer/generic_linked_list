@@ -31,7 +31,8 @@ O mesmo procedimento de testes ocorreu para deletar nós.
 
 ## Autor
 
-* **Artur Schaefer** - *Todo código* - [arturschaefer](https://github.com/arturschaefer)
+* **Artur Schaefer** - [arturschaefer](https://github.com/arturschaefer)
+* **Pseudomuto** - *Inspiração e exemplificação de código* - [Pseudomuto](http://pseudomuto.com/development/2013/05/02/implementing-a-generic-linked-list-in-c/)
 
 ## Conhecimentos
 
