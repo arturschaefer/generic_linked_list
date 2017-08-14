@@ -5,6 +5,7 @@ script:
   - gcc pessoa.c -o pessoa.o -c
   - gcc linked_list.c -o linked_list.o -c
   - gcc main.o pessoa.o linked_list.o -o app
+  - gcov main.c pessoa.c linked_list.c
 
 after_success:
   - bash <(curl -s https://codecov.io/bash)
