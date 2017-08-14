@@ -3,7 +3,7 @@ sudo: false # only for faster builds
 script:
   - gcc main.c -o main.o -c
   - gcc linked_list.c -o linked_list.o -c
-  - gcc -o main.o linked_list.o
+  - gcc main.o linked_list.o -o app
 
 after_success:
   - bash <(curl -s https://codecov.io/bash)
