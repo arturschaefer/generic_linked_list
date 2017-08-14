@@ -4,7 +4,7 @@ A Generic Doubly Linked List in C. Using struct of a Person as example.
 
 ## Status
 
-![Building Status](https://travis-ci.org/arturschaefer/generic_linked_list.svg?branch=master)
+[![Build Status](https://travis-ci.org/arturschaefer/generic_linked_list.svg?branch=master)](https://travis-ci.org/arturschaefer/generic_linked_list)
 
 ## Introdução
 
